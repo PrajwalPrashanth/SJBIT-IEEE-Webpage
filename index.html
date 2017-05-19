@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SJBIT IEEE Student Chapter</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="row1">
+		<a href="http://www.ieee.org/" target="_blank">IEEE.org</a>
+		<a href="http://ieeexplore.ieee.org/" target="_blank">IEEE <em>Xplore</em> Digital Library</a>
+		<a href="http://standards.ieee.org/" target="_blank">IEEE Standards</a>
+		<a href="http://spectrum.ieee.org/" target="_blank">IEEE Spectrum</a>
+        <a href="http://ewh.ieee.org/r10/india_council/newsletters.html" target="_blank">IEEE India Council Newsletter</a>
+		<a href="http://www.ieee.org/sitemap" target="_blank">More Sites</a>
+	</div>	
+	<div class="row2">
+		<div class="logoIEEE">
+			<img src="IEEE.png" alt="ieee logo" height="70%" width="65%">
+		</div>
+		<div class="gallery">
+			<h1>SJBIT IEEE Student Chapter</h1>
+			<div class="slider">
+				  <img class="mySlides" src="1.jpg">
+				  <img class="mySlides" src="2.jpg">
+				  <img class="mySlides" src="3.jpg">
+				  <img class="mySlides" src="4.jpg">
+			</div>
+
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() 
+				{
+				    var i;
+				    var x = document.getElementsByClassName("mySlides");
+				    for (i = 0; i < x.length; i++) 
+				    {
+				       x[i].style.display = "none";  
+				    }
+				    myIndex++;
+				    if (myIndex > x.length) {myIndex = 1}    
+				    x[myIndex-1].style.display = "block";  
+				    setTimeout(carousel, 2000); // Change image every 2 seconds
+				}
+			</script>
+		</div>
+		<div class="logoSJB">
+			<img src="LOGO.png" alt="sjb logo" height="90%" width="90%">
+		</div>
+	</div>
+
+</body>
+</html>
