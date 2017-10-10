@@ -7,11 +7,12 @@
 	<meta name="keywords" content="IEEE,sjbit,events,student,chapter,coding,programming" />
 	<meta name="description" content="Webpage of SJBIT IEEE Student Chapter,timeline if events conducted are displayed">
 	<title>SJBIT IEEE Student Chapter</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" media="screen and (max-width: 480px) and (min-width: 390px)" href="styles2.css">
-	<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 480px)" href="styles3.css">
-	<link rel="stylesheet" media="screen and (max-width: 768px) and (min-width: 600px)" href="styles4.css">
-	<link rel="stylesheet" media="screen and (min-width: 768px)" href="styles5.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" media="screen and (max-width: 480px) and (min-width: 390px)" href="css/styles2.css">
+	<link rel="stylesheet" media="screen and (max-width: 600px) and (min-width: 480px)" href="css/styles3.css">
+	<link rel="stylesheet" media="screen and (max-width: 768px) and (min-width: 600px)" href="css/styles4.css">
+	<link rel="stylesheet" media="screen and (min-width: 768px)" href="css/styles5.css">
+	
 </head>
 <body>
 	<div class="row1">
@@ -24,63 +25,150 @@
 	</div>	
 	<div class="row2">
 		<div class="logoIEEE">
-			<img src="IEEE.png" alt="ieee logo" height="95%" width="90%">
+			<img src="image/logo/IEEE.png" alt="ieee logo" height="95%" width="90%">
 		</div>
 		<div class="gallery">
 			<h1>SJBIT IEEE Student Chapter</h1>
 			<div class="slider">
-				  <img class="mySlides" src="1.jpg">
-				  <img class="mySlides" src="2.jpg">
-				  <img class="mySlides" src="3.jpg">
-				  <img class="mySlides" src="4.jpg">
+				  <img class="mySlides" src="image/main/1.jpg">
+				  <img class="mySlides" src="image/main/2.jpg">
+				  <img class="mySlides" src="image/main/3.jpg">
+				  <img class="mySlides" src="image/main/4.jpg">
+				  <script src="js/mainC.js"></script>
 			</div>
-
-			<script>
-				var myIndex = 0;
-				carousel();
-
-				function carousel() 
-				{
-				    var i;
-				    var x = document.getElementsByClassName("mySlides");
-				    for (i = 0; i < x.length; i++) 
-				    {
-				       x[i].style.display = "none";  
-				    }
-				    myIndex++;
-				    if (myIndex > x.length) {myIndex = 1}    
-				    x[myIndex-1].style.display = "block";  
-				    setTimeout(carousel, 4200); 
-				}
-			</script>
 		</div>
 		<div class="logoSJB">
-			<img src="LOGO.png" alt="sjb logo" height="90%" width="90%">
+			<img src="image/logo/LOGO.png" alt="sjb logo" height="90%" width="90%">
 		</div>
 	</div>
 	<div class="main_body">
 		<div class="r1">
-			<div class="b1">&nbsp</div>
-			<div class="b2">&nbsp</div>
+			<div class="b1">
+			<h3>Welcome to SJBIT IEEE STUDENT BRANCH</h3>
+			&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  SJBIT IEEE Student Branch provides a platform and members that will help to develop professionally designated fields of interest.
+			<button id="read_more">Read More</button>
+			<div id="myModal" class="modal">
+			<div class="modal_content">
+			<h3>Welcome to SJBIT IEEE STUDENT BRANCH<span id="close" class="close">&times;</span></h3>
+			&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+			&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  SJBIT IEEE Student Branch provides a platform and members that will help to develop professionally designated fields of interest.In addition to acc benefits students will be encouraged in building 	who can help you towards your targetted path. Our object between industry and students studying in 	technology related fields.
+			<script src="js/modal.js"></script>
+			</div>
+			</div>
+			</div>
 		</div>
 		<div class="r2">
-			<div class="b3">&nbsp</div>
-			<div class="b4">&nbsp</div>
-			<div class="c1">
-				<div class="b5">&nbsp</div>
-				<div class="b6">&nbsp</div>
+			<div class="b2">
+				<div class="b21">
+					<h4>Road So Far...</h4>
+				</div>
+				<div class="b22">
+					<div class="b221">
+						<h4>AJAX And Jquery Workshop | 05/11/2016 </h4>
+					</div>
+					<div class="b222">
+						<img src="image/ajax/1.jpg">
+						<img src="image/ajax/2.jpg">
+						<img src="image/ajax/3.jpg">
+					</div>
+				</div>
+				<div class="b22">
+					<div class="b221">
+						<h4>Machine Learning Workshop | 17/01/2017</h4>
+					</div>
+					<div class="b222">
+						<img src="image/ml/1.jpg">
+						<img src="image/ml/2.jpg">
+						<img src="image/ml/3.jpg">
+					</div>
+				</div>
+				<div class="b22">
+					<div class="b221">
+						<h4>IEEE Awareness seminar | 17/03/2017</h4>
+					</div>
+					<div class="b222">
+						<img src="image/aware/1.jpg">
+						<img src="image/aware/2.jpg">
+						<img src="image/aware/3.jpg">
+					</div>
+				</div>
+				<div class="b22">
+					<div class="b221">
+						<h4>Web Development | 11/04/2017 </h4>
+					</div>
+					<div class="b222">
+						<img src="image/web/1.jpg">
+						<img src="image/web/2.jpg">
+						<img src="image/web/3.jpg">
+					</div>
+				</div>
+			</div>			
+			<div class="r3">
+				<div class="b3">
+					<div class="b31">
+						<h4>Coming Soon...</h4>
+					</div>
+					<div class="b32">
+						<div class="b321"><a href="#">Future event 1</a></div>
+						<div class="b321"><a href="#">Future event 2</a></div>
+						<div class="b321"><a href="#">Future event 3</a></div>
+						<div class="b321"><a href="#">Future event 4</a></div>
+					</div>
+				</div>
+				<script src="js/threein4.js"></script>
+				<div class="b4">
+					<div class="b41">
+						<h4>Core Members</h4>
+					</div>
+					<div class="b42">
+						<div class="b421">
+							<h5>CHAIR - 94247502</h5><br />
+							Sarvadarshi | 9980169202
+
+						</div>
+						<div class="b421">
+							<h5>VICE CHAIR - 94247788</h5><br />
+							Prajwal Prashanth | 8123595943
+
+						</div>
+						<div class="b421">
+							<h5>SECRETARY - 94247774</h5><br />
+							Prajwal T S | 7892530771
+
+						</div>
+						<div class="b421">
+							<h5>TREASURER - 94247748</h5><br />
+							Darshan | 8296083733
+
+						</div>
+						<div class="b421">
+							<h5>WEB MASTER - 93587621</h5><br />
+							Vidya Kesarla Srinivas | 9632699992
+
+						</div>
+						<div class="b421">
+							<h5>DEPT. HEAD - 94247721</h5><br />
+							Sahana Hegde | 9986520261
+
+						</div>
+
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="r3">
-			<div class="c2">
-				<div class="b7">&nbsp</div>
-				<div class="b8">&nbsp</div>
-			</div>
-			<div class="b9">&nbsp</div>
+		<div class="obj">
+			<h4>About us....</h4><br />
+			<ul>
+				<li>Committe headed and organised by Sjbit IEEE student members</li>
+				<li>We aim for betterment of ourselves and our peers in the field of education as well as social beings </li>
+				<li>Timely worshops are organised to be on par with industry standards</li>
+			</ul>
 		</div>
 	</div>
+	
 	<footer>
-		<p><h2>&copy 2017-IEEE SJBIT STUDENT CHAPTER <br /> PRAJWAL PRASHANTH | PRAJWAL T S</h2></p>
+		<p><h2>&copy 2017-IEEE SJBIT STUDENT CHAPTER <br />WebPage created by: PRAJWAL PRASHANTH(94247788)</h2></p>
 	</footer>
 
 </body>
